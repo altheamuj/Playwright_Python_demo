@@ -22,7 +22,7 @@ class LoginPage:
         self.page.wait_for_url("**/auth/requestPasswordResetCode")
     
     def submit_reset_password(self, username: str):
-        expect(self.usernameInput).to_be_visible
+        expect(self.usernameInput).to_be_visible()
         
         self.usernameInput.fill(username)
         self.resetpasswordButton.click()
