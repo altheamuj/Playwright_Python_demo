@@ -39,8 +39,8 @@ jobs:
         env:
           ADMIN_USERNAME: ${{ secrets.ADMIN_USERNAME }}
           ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
-        run: pytest --browser ${{ matrix.browser }} --tracing=retain-on-failure --html=reports/report-${{ matrix.browser }}.html --self-contained-html
-
+        run: pytest --browser ${{ matrix.browser }} --tracing=retain-on-failure
+      
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v4
