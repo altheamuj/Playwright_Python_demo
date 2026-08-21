@@ -18,7 +18,6 @@ class LoginPage:
         self.loginButton.click()
         self.page.wait_for_selector("[role='alert']", timeout=10000)
 
-        
     def navigate_forgot_password(self):
         self.forgotPassword.click()
         self.page.wait_for_url("**/auth/requestPasswordResetCode")
