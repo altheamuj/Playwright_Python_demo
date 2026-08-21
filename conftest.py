@@ -19,6 +19,5 @@ def logged_in_page(page:Page):
     login_page.login(username, password)
     
     page.wait_for_url("https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index")
-    page.wait_for_selector("h6", timeout=10000)
     
     return page

@@ -16,7 +16,6 @@ class LoginPage:
         self.usernameInput.fill(username)
         self.passwordInput.fill(password)
         self.loginButton.click()
-        self.page.wait_for_selector("[role='alert']", timeout=10000)
 
     def navigate_forgot_password(self):
         self.forgotPassword.click()
