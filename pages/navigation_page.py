@@ -12,6 +12,8 @@ class NavigationPage:
         
         expect(self.page).to_have_url(expected_url)
         
+        self.page.wait_for_selector(f'a.oxd-main-menu-item.active:has-text("{menu_name}")', timeout=10000)
+        
         active_link = self.page.locator(f'a.oxd-main-menu-item.active:has-text("{menu_name}")')
         
         expect(active_link).to_be_visible()
