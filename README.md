@@ -1,7 +1,5 @@
 # Playwright Python Automation
 
-> This project is still ongoing.
-
 A hands-on end-to-end test automation project for the [OrangeHRM demo application](https://opensource-demo.orangehrmlive.com/), built with **Python**, **Playwright**, and **pytest**. It follows the **Page Object Model (POM)** design pattern for maintainable, scalable, and reusable test code.
 
 This project is being developed as part of a personal learning journey in test automation, with a focus on writing clean, readable, and reliable UI tests.
