@@ -6,7 +6,7 @@ class LoginPage:
         self.usernameInput = page.get_by_placeholder("Username")
         self.passwordInput = page.get_by_placeholder("Password")
         self.loginButton = page.get_by_role("button", name="Login")
-        self.alertMessage = page.get_by_role("alert")
+        self.alertMessage = page.locator("p.oxd-alert-content-text")
         
         self.forgotPassword = page.get_by_text("Forgot your password?")
         self.cancelButton = page.get_by_role("button", name="Cancel")
